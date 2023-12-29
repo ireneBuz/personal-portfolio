@@ -1,0 +1,108 @@
+.hero p {
+    color: black
+}
+
+.hero img {
+    width: 90%;
+    height: 90%;
+}
+
+.hero-background {
+    background: radial-gradient(ellipse closest-side at 60% 60%, rgb(21, 247, 187), #ffffff);
+}
+
+.hero {
+    padding-top: 210px;
+    padding-bottom: 60px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.hero h1,
+.hero h3,
+.hero h4 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 4.5em;
+}
+
+.hero h3 {
+    background: linear-gradient(to right, #9584ed, #a8c3fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero h4 {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 2.5em;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media (max-width: 1250px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero h3 {
+        font-size: 3em;
+    }
+
+    .hero h4 {
+        font-size: 1.8em;
+    }
+
+    .hero img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 810px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h3 {
+        font-size: 2.5em;
+    }
+
+    .hero h4 {
+        font-size: 1.3em;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-background {
+        background: radial-gradient(ellipse closest-side at 60% 60%, rgb(21, 247, 187), #ffffff);
+    }
+
+    .hero {
+        padding-bottom: 100px;
+        padding-top: 130px;
+    }
+
+    .hero h1,
+    .hero h3 {
+        font-size: 1.7em;
+        margin-bottom: 0px;
+    }
+
+    .hero h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 0.8em;
+    }
+
+
+}

@@ -1,0 +1,140 @@
+.projects-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(184, 205, 248, 0.7);
+    border-radius: 10px;
+}
+
+.projects-card-mini {
+    min-height: 80px;
+    background: rgba(216, 229, 254, 0.955);
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+
+
+.projects-card-mini img {
+    margin-top: 10px;
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.projects-card-mini h4 {
+    margin-top: 10px;
+}
+
+.projects-card-mini h5 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+
+
+.projects-card h3,
+.projects-card span {
+    color: rgb(255, 255, 255);
+    font-size: 3.2em;
+    font-family: 'Lexend', sans-serif;
+}
+
+.projects-card span {
+    font-size: 1.2em;
+    color: #54428E;
+}
+
+.git-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.git-icon img {
+    margin-left: 5px;
+    width: 30px
+}
+
+@media (max-width: 1401px) {
+    .projects-card-mini img {
+        width: 240px;
+        height: auto;
+    }
+
+    .git-icon img {
+        margin-left: 5px;
+        width: 30px
+    }
+}
+
+@media (max-width: 1270px) {
+
+    .projects-card-mini.happycode-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1201px) {
+    .projects-card-mini img {
+        width: 200px;
+        height: auto;
+    }
+
+    .git-icon img {
+        margin-left: 5px;
+        width: 30px
+    }
+}
+
+@media (max-width: 1001px) {
+    .projects-card-mini img {
+        width: 380px;
+        height: auto;
+    }
+
+    .git-icon img {
+        margin-left: 5px;
+        width: 30px
+    }
+}
+
+@media (max-width: 600px) {
+
+    .projects-card {
+        padding: 0;
+        padding-bottom: 40px;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    .projects-card h3,
+    .projects-card span {
+        font-size: 1.3em;
+    }
+
+    .projects-card-mini {
+        margin: 0;
+    }
+
+    .projects-card-mini h5 {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 0.8em;
+        margin-bottom: 15px;
+    }
+
+    .projects-card-mini img {
+        width: 280px;
+        height: auto;
+    }
+
+    .git-icon img {
+        margin-left: 5px;
+        width: 30px
+    }
+
+}

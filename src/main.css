@@ -1,0 +1,16 @@
+img {
+  width: 100%;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden !important;
+}
