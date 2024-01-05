@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Contact = ({ language }) => {
 
-    const [state, handleSubmit] = useForm("xzblydjk");
+    const [state, handleSubmit] = useForm("xnqkryva");
     const [hasContacted, setHasContacted] = useState(undefined)
     if (!hasContacted && state.succeeded) {
         setHasContacted(

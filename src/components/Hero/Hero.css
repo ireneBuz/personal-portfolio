@@ -1,14 +1,23 @@
-.hero p {
-    color: black
-}
-
 .hero img {
     width: 90%;
     height: 90%;
 }
 
+/* .hero-background {
+    background: radial-gradient(ellipse closest-side at 60% 60%, rgb(155, 155, 104), #ffffff);
+} */
 .hero-background {
-    background: radial-gradient(ellipse closest-side at 60% 60%, rgb(21, 247, 187), #ffffff);
+    /* background: radial-gradient(ellipse closest-side at 60% 60%, rgb(155, 155, 104), #ffffff); */
+    background-image:
+        radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 79, 79), rgb(223,
+                94, 94)),
+        radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
+    background-size: 50% 100%;
+    /* Dividir en dos partes iguales horizontalmente */
+    background-position: left, right;
+    /* Colocar cada color en su respectiva mitad */
+    background-repeat: no-repeat;
+    /* No repetir el fondo */
 }
 
 .hero {
@@ -18,19 +27,24 @@
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-.hero h1,
+.hero h1 {
+
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+    font-size: 4.5em;
+}
+
 .hero h3,
 .hero h4 {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
     font-size: 4.5em;
 }
 
 .hero h3 {
-    background: linear-gradient(to right, #9584ed, #a8c3fa);
+    color: rgb(43, 37, 37);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
 }
 
 .hero h4 {
@@ -45,7 +59,7 @@
 
 @media (max-width: 1250px) {
     .hero h1 {
-        font-size: 3em;
+        font-size: 6em;
     }
 
     .hero h3 {
@@ -83,7 +97,10 @@
 
 @media (max-width: 600px) {
     .hero-background {
-        background: radial-gradient(ellipse closest-side at 60% 60%, rgb(21, 247, 187), #ffffff);
+        background-image:
+            radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 79, 79), rgb(223,
+                    94, 94)),
+            radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
     }
 
     .hero {

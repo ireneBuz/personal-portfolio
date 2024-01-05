@@ -138,8 +138,8 @@ const Background = ({ language }) => {
                             )}
                         </Col>
                     </Row>
-                </Col>
-            </Row>
+                </Col >
+            </Row >
         </>
     )
 }

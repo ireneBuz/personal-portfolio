@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alejandroreche.com/sitemap.xml
+Sitemap: https://irenebuz.com/sitemap.xml

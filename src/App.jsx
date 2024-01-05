@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <Navigation language={language} setLanguage={setLanguage} />
-      <Container>
-        <AppRoutes language={language} />
-      </Container>
+      {/* <Container> */}
+      <AppRoutes language={language} />
+      {/* </Container> */}
       <Footer />
     </>
   )

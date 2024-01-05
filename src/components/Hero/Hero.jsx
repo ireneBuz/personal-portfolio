@@ -16,21 +16,21 @@ const Hero = ({ language }) => {
         <>
             <div className='hero-background'>
                 <Row className={`hero justify-content-center align-items-center ${loaded ? 'fade-in' : ''}`} role="banner" aria-label={language === 'ENG' ? 'Hero Section' : 'Sección del héroe'}>
-                    <Col xs='8' lg='7' className='d-flex flex-column align-items-center text-center'>
+                    <div xs='8' lg='7' className='d-flex flex-column align-items-center text-center'>
                         <h1 role="heading" aria-level="1">
-                            {language === 'ENG' ? 'Hey! I am' : '¡Hola! Soy'}
+                            {language === 'ENG' ? 'Hello!' : '¡Hola!'}
                         </h1>
                         <div>
                             <h3 role="heading" aria-level="2">
-                                Alejandro Reche
+                                {language === 'ENG' ? 'I am Irene Buceta' : 'Soy Irene Buceta'}
                             </h3>
                         </div>
                         <h4 role="heading" aria-level="3">
-                            {language === 'ENG' ? "I'm a Full Stack Web Developer" : "Soy Desarrollador Web Full Stack"}
+                            {language === 'ENG' ? "I'm a Full Stack Web Developer" : "Soy Desarrolladora Web Full Stack"}
                         </h4>
-                    </Col>
+                    </div>
                     <Col xs='4' lg='5' className='ps-0'>
-                        <img src="https://res.cloudinary.com/dbtmrinwa/image/upload/f_auto,q_auto/w2ae0zisgga9v8wasp9m" alt="Alejandro Reche's Photo" role="img" aria-label="Alejandro Reche's Photo" />
+                        {/* <img src="/images/fotopeque2.png" alt="Irene Buceta's Photo" role="img" aria-label="Alejandro Reche's Photo" /> */}
                     </Col>
                 </Row>
             </div>

@@ -43,7 +43,7 @@ const Navigation = ({ language, setLanguage }) => {
             <Row className='navi justify-content-between align-items-center' role="navigation" aria-label={language === 'ENG' ? 'Main Navigation' : 'Navegación Principal'}>
                 <Col xs='3' lg='3'>
                     <div className={`nav-head ${scrolling ? 'scroll-down' : ''}`}>
-                        <a href="#intro-blank-section"> <h3><span>Alejandro Reche</span></h3> </a>
+                        <a href="#intro-blank-section"> <h3><span>Irene Buceta</span></h3> </a>
                     </div>
                 </Col>
                 <Col xs='8' lg='6'>
@@ -60,8 +60,8 @@ const Navigation = ({ language, setLanguage }) => {
                     </Row>
                 </Col>
                 <Col xs='2' lg='1' className='logo-contact text-end'>
-                    <a href='https://github.com/recheitor' target='_blank'><img className='me-2' src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
-                    <a href='https://www.linkedin.com/in/alejandro-reche-costa/' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/f_auto,q_auto/qktqnj646lv6ix3uwafy" alt="LinkedIn Icon" role="img" aria-label="LinkedIn Profile" /></a>
+                    <a href='https://github.com/ireneBuz' target='_blank'><img className='me-2' src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
+                    <a href='https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/f_auto,q_auto/qktqnj646lv6ix3uwafy" alt="LinkedIn Icon" role="img" aria-label="LinkedIn Profile" /></a>
                 </Col>
                 <Col xs='2' lg='1' className='nav-language d-flex align-items-center justify-content-center' >
                     <Link style={{ textDecoration: 'none', fontSize: '0.9em', color: '#C490D1' }} onClick={language === 'ENG' ? (() => handleLanguageEspClick()) : (() => handleLanguageEngClick())} role="button">
