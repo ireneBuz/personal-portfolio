@@ -1,20 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #about-me-section {
-    margin-top: 0px;
-    padding-top: 90px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 #projects-section {
-    padding-top: 80px;
+    padding-top: 0px;
+    box-sizing: border-box;
 }
 
 #contact-me-section {
-    padding-top: 60px;
+    padding-top: 0px;
+}
+
+section {
+    height: 650px;
 }
 
 @media screen and (max-width: 991px) {
     #about-me-section {
         margin-top: 0px;
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     #projects-section {

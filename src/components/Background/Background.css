@@ -41,7 +41,7 @@
 }
 
 .background-card {
-    background: linear-gradient(to right, rgba(149, 242, 217, 0.7), transparent);
+    background: rgb(245, 245, 247);
     height: 430px;
     box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -50,7 +50,7 @@
 .background-card-mini {
     min-height: 80px;
     margin: 20px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 25px rgba(145, 12, 12, 0.1);
     border-radius: 10px;
     font-family: 'Lexend', sans-serif;
     font-size: 1.3em;
@@ -77,7 +77,7 @@
 
 .background-title span {
     font-size: 1.2em;
-    color: #1af1b0;
+    color: rgb(220, 178, 79);
 }
 
 @media (max-width: 1450px) {
@@ -95,7 +95,7 @@
 
 @media (max-width: 600px) {
     .background-card {
-        background: linear-gradient(to right, rgba(149, 242, 217, 0.7), transparent);
+        background: rgb(245, 245, 247);
         height: 470px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
         border-radius: 0px;

@@ -22,7 +22,7 @@ const HomePage = ({ language }) => {
                 <Col xs='12' lg='10' >
                     <section id="about-me-section">
                         <Qualities language={language} />
-                        <Background language={language} />
+                        {/* <Background language={language} /> */}
                     </section>
                 </Col>
             </Row>

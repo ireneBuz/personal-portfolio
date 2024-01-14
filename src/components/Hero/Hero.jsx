@@ -17,11 +17,17 @@ const Hero = ({ language }) => {
             <div className='hero-background'>
                 <Row className={`hero justify-content-center align-items-center ${loaded ? 'fade-in' : ''}`} role="banner" aria-label={language === 'ENG' ? 'Hero Section' : 'Sección del héroe'}>
                     <div xs='8' lg='7' className='d-flex flex-column align-items-center text-center'>
-                        <h1 role="heading" aria-level="1">
-                            {language === 'ENG' ? 'Hello!' : '¡Hola!'}
-                        </h1>
-                        <div>
-                            <h3 role="heading" aria-level="2">
+
+                        {language === 'ENG' ? (
+                            <h1 role="heading" aria-level="1">
+                                Hello <span>!</span></h1>
+                        ) : (
+                            <h1 role="heading" aria-level="1">
+                                Hola <span>!</span></h1>
+
+                        )}
+                        < div >
+                            < h3 role="heading" aria-level="2">
                                 {language === 'ENG' ? 'I am Irene Buceta' : 'Soy Irene Buceta'}
                             </h3>
                         </div>
@@ -32,8 +38,8 @@ const Hero = ({ language }) => {
                     <Col xs='4' lg='5' className='ps-0'>
                         {/* <img src="/images/fotopeque2.png" alt="Irene Buceta's Photo" role="img" aria-label="Alejandro Reche's Photo" /> */}
                     </Col>
-                </Row>
-            </div>
+                </Row >
+            </div >
         </>
     )
 }

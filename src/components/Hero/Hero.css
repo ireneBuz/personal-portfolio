@@ -9,8 +9,7 @@
 .hero-background {
     /* background: radial-gradient(ellipse closest-side at 60% 60%, rgb(155, 155, 104), #ffffff); */
     background-image:
-        radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 79, 79), rgb(223,
-                94, 94)),
+        radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 178, 79), rgb(220, 178, 79)),
         radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
     background-size: 50% 100%;
     /* Dividir en dos partes iguales horizontalmente */
@@ -18,6 +17,11 @@
     /* Colocar cada color en su respectiva mitad */
     background-repeat: no-repeat;
     /* No repetir el fondo */
+    height: 100vh;
+}
+
+span {
+    color: rgb(220, 178, 79)
 }
 
 .hero {
@@ -25,6 +29,17 @@
     padding-bottom: 60px;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 178, 79), rgb(220, 178, 79)),
+        radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
+    background-size: 50% 100%;
+    background-position: left, right;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -53,9 +68,33 @@
     font-size: 2.5em;
 }
 
+@keyframes fallIn {
+    0% {
+        transform: translateY(-300px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Cambié translateY(50) a translateY(0) */
+        opacity: 1;
+    }
+}
+
+.hero h1,
+.hero h3,
+.hero h4 {
+    opacity: 0;
+    animation: fallIn 1.5s forwards;
+}
+
 .fade-in {
     opacity: 1;
 }
+
+
+
+
 
 @media (max-width: 1250px) {
     .hero h1 {
@@ -97,10 +136,8 @@
 
 @media (max-width: 600px) {
     .hero-background {
-        background-image:
-            radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 79, 79), rgb(223,
-                    94, 94)),
-            radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
+        background-image: rgb(220, 178, 79);
+        background-size: 50% 100%;
     }
 
     .hero {

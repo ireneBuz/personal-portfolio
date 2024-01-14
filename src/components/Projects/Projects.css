@@ -1,13 +1,13 @@
 .projects-card {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: rgba(184, 205, 248, 0.7);
+    background: rgb(245, 245, 247);
     border-radius: 10px;
 }
 
 .projects-card-mini {
     min-height: 80px;
-    background: rgba(216, 229, 254, 0.955);
+    background: rgb(220, 178, 79);
     box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     font-family: 'Lexend', sans-serif;
@@ -38,14 +38,14 @@
 
 .projects-card h3,
 .projects-card span {
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 3.2em;
     font-family: 'Lexend', sans-serif;
 }
 
 .projects-card span {
     font-size: 1.2em;
-    color: #54428E;
+    color: rgb(220, 178, 79);
 }
 
 .git-icon {

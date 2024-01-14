@@ -7,6 +7,10 @@
     height: 60%;
 }
 
+.qualities-background {
+    height: 100vh;
+}
+
 .background-blur {
     margin-bottom: 50px;
     padding-bottom: 20px;
@@ -16,6 +20,7 @@
     border-radius: 10px;
     /* background: linear-gradient(to left, #B8CDF8 1%, transparent); */
     background: rgb(240, 240, 246);
+    height: 100vh;
 }
 
 .qualities-card {
@@ -45,7 +50,7 @@
 .qualities-title span {
     font-size: 3.2em;
     font-family: 'Lexend', sans-serif;
-    color: rgb(220, 79, 79);
+    color: rgb(220, 178, 79);
     margin-bottom: 50px;
 
 }

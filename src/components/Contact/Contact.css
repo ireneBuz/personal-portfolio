@@ -9,8 +9,8 @@
     line-height: 22px;
     letter-spacing: 0.5px;
     outline: none;
-    color: #54428E;
-    background-color: rgba(225, 246, 241, 0.7);
+    color: #14010e;
+    background-color: rgb(245, 245, 247);
     border: none;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -22,7 +22,7 @@
 
 .form-group input::-webkit-input-placeholder,
 .form-group textarea::-webkit-input-placeholder {
-    color: #9D8DF1;
+    color: #010008;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -54,7 +54,7 @@
 
 .btn {
     font-family: 'Lexend', sans-serif !important;
-    background: #1CFEBA !important;
+    background: rgb(220, 178, 79) !important;
     border-radius: 4px;
     height: 44px;
     font-size: 13px;
@@ -78,9 +78,9 @@
     -ms-flex-pack: center;
     text-align: center;
     border: none;
-    background-color: #777ca2;
+    background-color: #0c1a85;
     color: #ced7e8;
-    box-shadow: 0 0px 24px 0 #09c68d;
+    box-shadow: 0 0px 24px 0 rgb(218, 187, 115);
 }
 
 .btn:active,
@@ -92,14 +92,13 @@
 
 .btn:hover {
     background-color: #858ebf;
-    color: #b2b9e0;
     box-shadow: 0 8px 24px 0 rgba(145, 189, 223, 0.8);
 }
 
 .contact-card {
     padding-top: 20px;
     padding-bottom: 40px;
-    background: rgba(149, 242, 217, 0.7);
+    background: rgb(245, 245, 247);
     border-radius: 10px;
 }
 
@@ -114,12 +113,12 @@
 }
 
 .contact-card h3 {
-    color: rgb(68, 78, 73)
+    color: rgb(6, 108, 57)
 }
 
 .contact-card span {
     font-size: 1.2em;
-    color: #06c28a;
+    color: rgb(220, 178, 79);
 }
 
 @media (max-width: 600px) {
@@ -132,6 +131,4 @@
     .contact-card span {
         font-size: 1.3em;
     }
-
-
 }
