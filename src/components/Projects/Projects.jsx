@@ -1,81 +1,52 @@
-import { Col, Row, } from 'react-bootstrap'
-import './Projects.css'
+import React from 'react';
+import './Projects.css';
+
+const Project = ({ title, description, githubLink, projectLink, screenshot }) => {
+    return (
+        <div className='project'>
+            <div className='project-img'>
+                <img src={screenshot} alt={`${title} Project screenshot`} />
+                <div className='project-info'>
+                    <h4>{title}</h4>
+                    <p>{description}</p>
+                    <div className='links'>
+                        <a href={githubLink} target='_blank' rel='noopener noreferrer'>GitHub</a>
+                        <a href={projectLink} target="_blank" rel='noopener noreferrer'>Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 const Projects = ({ language }) => {
+    const projectsData = [
+        {
+            title: language === 'ENG' ? 'Creatives Q+' : 'Creativos Q+',
+            description: 'A project for Creatives Q+.',
+            githubLink: 'https://github.com/ireneBuz/Q-support-client',
+            projectLink: 'https://creativesqplus.netlify.app/',
+            screenshot: '/images/creatives-screen.png',
+        },
+        {
+            title: 'Kind of Snake',
+            description: 'A project about a kind of snake.',
+            githubLink: 'https://github.com/ireneBuz/ironhack-project01',
+            projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
+            screenshot: '/images/kind-of-snake.png',
+        },
+    ];
 
     return (
-        <>
-            <Row className='justify-content-center' role="region" aria-label={language === 'ENG' ? 'Projects Section' : 'Sección de Proyectos'}>
-                <Col xs='12' lg='12' className='projects-card'>
-                    <Row className='justify-content-center mt-2'>
-                        <Col xs='12' lg='10' className=' text-center'>
-                            <h3 role="heading" aria-level="1">
-                                {language === 'ENG' ? 'My ' : 'Mis '}
-                                <span>{language === 'ENG' ? 'Projects' : 'Proyectos'}</span>
-                            </h3>
-                        </Col>
-                    </Row>
+        <div className='projects-section' role="region" aria-label={language === 'ENG' ? 'Projects Section' : 'Sección de Proyectos'}>
+            <h3 className='projects-title'>{language === 'ENG' ? 'My Projects' : 'Mis Proyectos'}</h3>
+            <div className='projects-grid'>
+                {projectsData.map((project, index) => (
+                    <Project key={index} {...project} />
+                ))}
+            </div>
+        </div>
+    );
+};
 
-                    <Row className='justify-content-evenly mt-2 mb-4' role="list">
-                        <Col xs='10' lg='5' className='projects-card-mini text-center mt-3' role="listitem">
-                            <div className='git-icon' >
-                                <h4>Creatives Q+</h4>
-                                <a href='https://github.com/ireneBuz/Q-support-client' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
-                            </div>
-                            <a href="https://creativesqplus.netlify.app/" target="_blank">
-                                <img src="public/images/creatives-screen.png" alt="Creatives Q+ Project screenshot" role="img" aria-label="Creactives Q+ Project Screenshot" loading="lazy" />
-                            </a>
-                            <h4>{language === 'ENG' ? 'Developed with:' : 'Desarrollado con:'}</h4>
-                            <h5>ExpressJS - MongoDB</h5>
-                            <h5>ReactJS - NodeJS</h5>
-                        </Col>
-
-                        <Col xs='10' lg='5' className='projects-card-mini text-center mt-3' role="listitem">
-                            <div className='git-icon' >
-                                <h4>Kind of Snake</h4>
-                                <a href='https://github.com/ireneBuz/ironhack-project01' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
-                            </div>
-                            <a href="https://isabellanpaiva.github.io/kind-of-snake/" target="_blank">
-                                <img src="/images/kind-of-snake.png" alt="kind of snake screenshot" role="img" aria-label="kind of snake Project Screenshot" loading="lazy" />
-                            </a>
-                            <h4>{language === 'ENG' ? 'Developed with:' : 'Desarrollado con:'}</h4>
-                            <h5>ExpressJS - MongoDB</h5>
-                            <h5>ReactJS - NodeJS</h5>
-                        </Col>
-
-                        <Col xs='10' lg='5' className='projects-card-mini text-center mt-3' role="listitem">
-                            <div className='git-icon' >
-                                <h4>Creatives Q+</h4>
-                                <a href='https://github.com/ireneBuz/Q-support-client' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
-                            </div>
-                            <a href="https://creativesqplus.netlify.app/" target="_blank">
-                                <img src="public/images/creatives-screen.png" alt="Creatives Q+ Project screenshot" role="img" aria-label="Creactives Q+ Project Screenshot" loading="lazy" />
-                            </a>
-                            <h4>{language === 'ENG' ? 'Developed with:' : 'Desarrollado con:'}</h4>
-                            <h5>ExpressJS - MongoDB</h5>
-                            <h5>ReactJS - NodeJS</h5>
-                        </Col>
-                        <Col xs='10' lg='5' className='projects-card-mini text-center mt-3' role="listitem">
-                            <div className='git-icon' >
-                                <h4>Creatives Q+</h4>
-                                <a href='https://github.com/ireneBuz/Q-support-client' target='_blank'><img src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" /></a>
-                            </div>
-                            <a href="https://creativesqplus.netlify.app/" target="_blank">
-                                <img src="public/images/creatives-screen.png" alt="Creatives Q+ Project screenshot" role="img" aria-label="Creactives Q+ Project Screenshot" loading="lazy" />
-                            </a>
-                            <h4>{language === 'ENG' ? 'Developed with:' : 'Desarrollado con:'}</h4>
-                            <h5>ExpressJS - MongoDB</h5>
-                            <h5>ReactJS - NodeJS</h5>
-                        </Col>
-
-
-
-
-                    </Row>
-                </Col>
-            </Row>
-        </>
-    )
-}
-
-export default Projects
+export default Projects;

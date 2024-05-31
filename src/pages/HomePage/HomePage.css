@@ -2,10 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#hero-section {
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
 #about-me-section {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 #projects-section {
@@ -18,12 +22,14 @@ html {
 }
 
 section {
-    height: 650px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 991px) {
     #about-me-section {
-        margin-top: 0px;
+        margin-top: 20px;
         padding-top: 0px;
     }
 

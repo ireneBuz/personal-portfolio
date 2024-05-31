@@ -1,89 +1,89 @@
-.hero img {
-    width: 90%;
-    height: 90%;
-}
-
-/* .hero-background {
-    background: radial-gradient(ellipse closest-side at 60% 60%, rgb(155, 155, 104), #ffffff);
-} */
 .hero-background {
-    /* background: radial-gradient(ellipse closest-side at 60% 60%, rgb(155, 155, 104), #ffffff); */
-    background-image:
-        radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 178, 79), rgb(220, 178, 79)),
-        radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
-    background-size: 50% 100%;
-    /* Dividir en dos partes iguales horizontalmente */
-    background-position: left, right;
-    /* Colocar cada color en su respectiva mitad */
-    background-repeat: no-repeat;
-    /* No repetir el fondo */
-    height: 100vh;
-}
-
-span {
-    color: rgb(220, 178, 79)
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363F40;
 }
 
 .hero {
-    padding-top: 210px;
-    padding-bottom: 60px;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-image: radial-gradient(ellipse closest-side at 60% 60%, rgb(220, 178, 79), rgb(220, 178, 79)),
-        radial-gradient(ellipse closest-side at 60% 60%, rgb(245, 245, 247), rgb(240, 240, 246));
-    background-size: 50% 100%;
-    background-position: left, right;
-    background-repeat: no-repeat;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+/* Otros estilos permanecen igual */
+.ex {
+    color: #D98566;
+    font-weight: 600;
+}
+
+.highlight {
+    font-weight: 400;
+    color: rgb(211, 203, 203);
+}
+
+.hero {
+    padding-top: 13vw;
+    padding-bottom: 13vw;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
 }
 
 .hero h1 {
-
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 800;
-    font-size: 4.5em;
+    margin-bottom: 2vw;
 }
 
-.hero h3,
-.hero h4 {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 800;
-    font-size: 4.5em;
-}
-
+.hero h1,
+.hero h2,
 .hero h3 {
-    color: rgb(43, 37, 37);
-    -webkit-background-clip: text;
-    background-clip: text;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+    font-size: 2vw;
+    color: rgb(211, 203, 203);
+    text-align: left;
+    margin-left: 7vw;
+    line-height: 3vw;
 }
 
-.hero h4 {
-    margin-top: 10px;
-    margin-bottom: 80px;
-    font-size: 2.5em;
+.arrow {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-left: 0.3vw solid #D98566;
+    border-bottom: 0.3vw solid #D98566;
+    transform: rotate(-45deg);
+    animation: bounce 1.5s infinite;
 }
 
 @keyframes fallIn {
     0% {
-        transform: translateY(-300px);
-        opacity: 1;
+        transform: translateY(-300%);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0);
-        /* Cambié translateY(50) a translateY(0) */
         opacity: 1;
     }
 }
 
 .hero h1,
-.hero h3,
-.hero h4 {
+.hero h2,
+.hero h3 {
     opacity: 0;
     animation: fallIn 1.5s forwards;
 }
@@ -92,71 +92,61 @@ span {
     opacity: 1;
 }
 
-
-
-
-
 @media (max-width: 1250px) {
-    .hero h1 {
-        font-size: 6em;
-    }
 
+    .hero h1,
+    .hero h2,
     .hero h3 {
-        font-size: 3em;
-    }
-
-    .hero h4 {
-        font-size: 1.8em;
+        font-size: 2vw;
     }
 
     .hero img {
         width: 80%;
-        height: 80%;
+        height: auto;
     }
 }
 
 @media (max-width: 810px) {
-    .hero h1 {
-        font-size: 2.5em;
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
+    .hero h1,
+    .hero h2,
     .hero h3 {
-        font-size: 2.5em;
-    }
-
-    .hero h4 {
-        font-size: 1.3em;
+        font-size: 4vw;
+        margin-left: 0;
     }
 
     .hero img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: auto;
     }
 }
 
 @media (max-width: 600px) {
     .hero-background {
         background-image: rgb(220, 178, 79);
-        background-size: 50% 100%;
+        background-size: cover;
     }
 
     .hero {
-        padding-bottom: 100px;
-        padding-top: 130px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .hero h1,
-    .hero h3 {
-        font-size: 1.7em;
-        margin-bottom: 0px;
+    .hero h2 {
+        font-size: 6vw;
+        margin-bottom: 0;
     }
 
-    .hero h4 {
+    .hero h3 {
         margin-top: 10px;
         margin-bottom: 10px;
         font-weight: 500;
-        font-size: 0.8em;
+        font-size: 4vw;
     }
-
-
 }

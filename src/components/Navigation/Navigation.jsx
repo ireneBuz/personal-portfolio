@@ -92,12 +92,12 @@ const Navigation = ({ language, setLanguage }) => {
                         </a>
                     </li>
                     <li>
-                        <a href='https://github.com/recheitor' target='_blank' onClick={closeMenu} role="menuitem">
+                        <a href='https://github.com/ireneBuz' target='_blank' onClick={closeMenu} role="menuitem">
                             <img className='logo-contact-mini' src="https://res.cloudinary.com/dbtmrinwa/image/upload/v1697055951/xbuhmypxuxhnni2itq3l.png" alt="GitHub Icon" role="img" aria-label="GitHub Profile" />
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.linkedin.com/in/alejandro-reche-costa/' target='_blank' role="menuitem">
+                        <a href='https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/' target='_blank' role="menuitem">
                             <img className='logo-contact-mini' src="https://res.cloudinary.com/dbtmrinwa/image/upload/f_auto,q_auto/qktqnj646lv6ix3uwafy" alt="LinkedIn Icon" role="img" aria-label="LinkedIn Profile" />
                         </a>
                     </li>
