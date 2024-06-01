@@ -7,19 +7,11 @@
     background-color: #363F40;
 }
 
-.hero {
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    height: 100%;
+.img {
+    width: 80%;
 }
 
-/* Otros estilos permanecen igual */
+
 .ex {
     color: #D98566;
     font-weight: 600;
@@ -31,7 +23,7 @@
 }
 
 .hero {
-    padding-top: 13vw;
+    padding-top: 14vw;
     padding-bottom: 13vw;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -41,6 +33,7 @@
     align-items: center;
     text-align: left;
     width: 100%;
+    height: 100%;
 }
 
 .hero h1 {
@@ -67,6 +60,7 @@
     border-bottom: 0.3vw solid #D98566;
     transform: rotate(-45deg);
     animation: bounce 1.5s infinite;
+    margin-top: -12vw;
 }
 
 @keyframes fallIn {

@@ -34,6 +34,7 @@ const Hero = ({ language }) => {
                             <span className="highlight">{language === 'ENG' ? "Music Educational" : "Educación Musical"}</span>
                             {language === 'ENG' ? " experience" : ""}
                         </h3>
+
                     </Col>
 
                     <Col xs='4' lg='4' className='ps-0'>

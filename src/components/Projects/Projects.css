@@ -1,4 +1,3 @@
-/* Projects.css */
 .projects-section {
     width: 100%;
     background-color: #363F40;
@@ -9,22 +8,34 @@
 
 .projects-title {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 5vw;
+    color: rgb(211, 203, 203);
+    text-align: left;
+    margin-left: 14vw;
+}
+
+.hover-info {
+    font-size: 1.3vw;
+    font-weight: 200;
+    display: flex;
+    margin-top: 1vw;
+}
+
+.projects {
+    color: #D98566;
 }
 
 .projects-grid {
-    text-align: left;
+    text-align: center;
     /* Para alinear los proyectos a la izquierda */
 }
 
 .project {
     display: inline-block;
     /* Mostrar los proyectos en línea */
-    width: calc(40% - 2vw);
+    width: calc(35% - 2vw);
     /* Ancho de cada proyecto (50% menos el margen) */
-    margin: 1vw;
-    vertical-align: top;
-    /* Alinear la parte superior de los proyectos */
+    margin: 3vw;
 }
 
 .project-img {
@@ -46,11 +57,13 @@
 
 .project-info {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -58,7 +71,7 @@
 }
 
 .project:hover .project-info {
-    opacity: 1;
+    opacity: 2;
 }
 
 .project-info h4 {
@@ -69,13 +82,45 @@
     margin-bottom: 20px;
 }
 
-.links a {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-    text-decoration: none;
+.technologies {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.links a:hover {
-    text-decoration: underline;
+.tech-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: default;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link-button {
+    background-color: #D98566;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.link-button:hover {
+    background-color: #B8BFBE;
+    transform: scale(1.05);
 }
