@@ -34,17 +34,19 @@ const Hero = ({ language }) => {
                             <span className="highlight">{language === 'ENG' ? "Music Educational" : "Educación Musical"}</span>
                             {language === 'ENG' ? " experience" : ""}
                         </h3>
-
                     </Col>
 
                     <Col xs='4' lg='4' className='ps-0'>
                         <img className="img" src="/images/perfil.webp" alt="Irene Buceta's Photo" role="img" aria-label="Irene Buceta's Photo" />
                     </Col>
-
                 </Row>
-                <div className="scroll-down">
-                    <span className="arrow"></span>
-                </div>
+                <motion.div
+                    className="scroll-arrow"
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                >
+                    &#x25BC;
+                </motion.div>
             </div>
         </>
     )

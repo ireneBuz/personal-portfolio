@@ -1,11 +1,9 @@
 import Hero from '../../components/Hero/Hero'
-// import Background from '../../components/Background/Background'
 import Contact from '../../components/Contact/Contact'
 import Projects from '../../components/Projects/Projects'
-import Qualities from '../../components/Qualities/Qualities'
 import Navigation from '../../components/Navigation/Navigation'
+import Skills from '../../components/Skills/Skills'
 import './HomePage.css'
-import { Col, Row } from 'react-bootstrap'
 
 const HomePage = ({ language }) => {
     return (
@@ -21,9 +19,8 @@ const HomePage = ({ language }) => {
             <section id="projects-section" role="region" aria-label={language === 'ENG' ? 'Projects Section' : 'Sección de Proyectos'}>
                 <Projects language={language} />
             </section>
-
-            <section id="about-me-section">
-                <Qualities language={language} />
+            <section id="skills-section">
+                <Skills language={language} />
                 {/* <Background language={language} /> */}
             </section>
 

@@ -1,28 +1,26 @@
 .form-style {
-    padding: 13px 20px;
-    padding-left: 55px;
-    height: 48px;
-    width: 100%;
+    padding: 1vw;
+    padding-left: 2vw;
+    height: 3.5vw;
+    width: 80%;
     font-weight: 500;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
+    border-radius: 1vw;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1vw;
     outline: none;
-    color: #14010e;
-    background-color: rgb(245, 245, 247);
+    color: #363F40;
+    background-color: #ADB8B8;
     border: none;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+    display: block;
+    margin: 0 auto;
 }
-
-
-
 
 .form-group input::-webkit-input-placeholder,
 .form-group textarea::-webkit-input-placeholder {
-    color: #010008;
+    color: #260F0D;
+    font-size: 1.1vw;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -53,17 +51,15 @@
 }
 
 .btn {
-    font-family: 'Lexend', sans-serif !important;
-    background: rgb(220, 178, 79) !important;
-    border-radius: 4px;
-    height: 44px;
-    font-size: 13px;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #D98566 !important;
+    border-radius: 1vw;
+    height: 3vw;
+    font-size: 1vw;
     font-weight: 600;
-    text-transform: uppercase;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
     padding: 0 30px;
-    letter-spacing: 1px;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -78,48 +74,94 @@
     -ms-flex-pack: center;
     text-align: center;
     border: none;
-    background-color: #0c1a85;
     color: #ced7e8;
-    box-shadow: 0 0px 24px 0 rgb(218, 187, 115);
+    margin-bottom: 30vw;
 }
 
 .btn:active,
 .btn:focus {
-    background-color: #757a8b;
+
+    background-color: #260F0D;
     color: #b2b9e0;
-    box-shadow: 0 8px 24px 0 rgba(101, 104, 113, 0.2);
+    /* box-shadow: 0 8px 24px 0 rgba(101, 104, 113, 0.2); */
 }
 
 .btn:hover {
-    background-color: #858ebf;
-    box-shadow: 0 8px 24px 0 rgba(145, 189, 223, 0.8);
+    background-color: #F2B885;
+    box-shadow: 0 0.1vw 0.5vw 0 #F2B885;
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        height: 4vw;
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .btn {
+        height: 5vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 6vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        height: 8vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 10vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 360px) {
+    .btn {
+        height: 12vw;
+        font-size: 1vw;
+    }
 }
 
 .contact-card {
-    padding-top: 20px;
+    padding-top: 2vw;
     padding-bottom: 40px;
-    background: rgb(245, 245, 247);
+    background-color: #6C7372;
     border-radius: 10px;
 }
 
 .contact-card h4 {
-    font-family: 'Lexend', sans-serif;
+
+    font-family: 'Urbanist', sans-serif;
 }
 
 .contact-card h3,
 .contact-card span {
-    font-size: 3.2em;
-    font-family: 'Lexend', sans-serif;
+    margin-top: 4vw;
+    font-size: 3.2vw;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 3vw;
 }
 
-.contact-card h3 {
-    color: rgb(6, 108, 57)
-}
+
 
 .contact-card span {
-    font-size: 1.2em;
-    color: rgb(220, 178, 79);
+    font-size: 3vw;
+    color: #D98566;
+    font-family: 'Urbanist', sans-serif;
 }
+
+
 
 @media (max-width: 600px) {
     .contact-card {

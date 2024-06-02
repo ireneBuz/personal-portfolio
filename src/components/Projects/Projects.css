@@ -7,18 +7,33 @@
 }
 
 .projects-title {
-    font-size: 2em;
+
+    font-size: 2vw;
     margin-bottom: 5vw;
     color: rgb(211, 203, 203);
-    text-align: left;
-    margin-left: 14vw;
+    text-align: center;
 }
+
 
 .hover-info {
     font-size: 1.3vw;
     font-weight: 200;
     display: flex;
-    margin-top: 1vw;
+    margin-left: 9vw;
+    margin-top: 4vw;
+    margin-bottom: -5vw;
+    animation: pulse 1s infinite alternate;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1.4);
+    }
 }
 
 .projects {
@@ -27,15 +42,17 @@
 
 .projects-grid {
     text-align: center;
-    /* Para alinear los proyectos a la izquierda */
 }
 
 .project {
     display: inline-block;
-    /* Mostrar los proyectos en línea */
-    width: calc(35% - 2vw);
-    /* Ancho de cada proyecto (50% menos el margen) */
+    width: calc(40% - 2vw);
     margin: 3vw;
+    box-shadow: 1px 1px 8px 0.5px #F2AA80;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #363F40;
 }
 
 .project-img {
@@ -63,23 +80,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: rgba(25, 23, 23, 0.9);
+    color: rgb(211, 203, 203);
     padding: 20px;
     border-radius: 10px;
     transition: opacity 0.3s;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+    font-size: 1.3vw;
 }
 
 .project:hover .project-info {
-    opacity: 2;
+    opacity: 1;
 }
 
 .project-info h4 {
-    margin-bottom: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
 }
 
 .project-info p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
 }
 
 .technologies {
@@ -87,7 +113,7 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 1.3vw;
 }
 
 .tech-button {

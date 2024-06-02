@@ -31,12 +31,20 @@ const Project = ({ title, description, githubLink, projectLink, screenshot, tech
 const Projects = ({ language }) => {
     const projectsData = [
         {
-            title: language === 'ENG' ? 'Creatives Q+' : 'Creativos Q+',
-            description: 'A project for Creatives Q+.',
+            title: language === 'ENG' ? 'Psychology page' : 'Web Psicología',
+            description: 'WorkInProgress. Professional psychology site, featuring the owner profile, services, and contact information. Designed by: Helena Arroyo',
+            githubLink: 'https://github.com/ireneBuz/ironhack-project01',
+            projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
+            screenshot: '/images/psico-proyect.png',
+            technologies: ['React', 'JavaScript', 'HTML', 'CSS']
+        },
+        {
+            title: language === 'ENG' ? 'Piano Lessons' : 'Clases de Piano',
+            description: 'My personal music lessons website. Developed in React and Vue. Designed by: Alejandra Mamblona Gómez',
             githubLink: 'https://github.com/ireneBuz/Q-support-client',
             projectLink: 'https://creativesqplus.netlify.app/',
-            screenshot: '/images/creatives-screen.png',
-            technologies: ['React', 'HTML', 'CSS']
+            screenshot: '/images/clases-proyect.png',
+            technologies: ['React', 'Vue', 'Javascript', 'HTML', 'CSS']
         },
         {
             title: 'Kind of Snake',
@@ -46,6 +54,15 @@ const Projects = ({ language }) => {
             screenshot: '/images/kind-of-snake.png',
             technologies: ['JavaScript', 'HTML', 'CSS']
         },
+        {
+            title: 'Kind of Snake',
+            description: 'A project about a kind of snake.',
+            githubLink: 'https://github.com/ireneBuz/ironhack-project01',
+            projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
+            screenshot: '/images/clases-proyect.png',
+            technologies: ['JavaScript', 'HTML', 'CSS']
+        },
+
     ];
 
     return (

@@ -23,7 +23,7 @@ const Contact = ({ language }) => {
                 <Col md='7' xs='11' className='text-center'>
                     <div className="card-3d-wrap">
                         <h3 role="heading" aria-level="1">
-                            {language === 'ENG' ? <span>Contact</span> : <span>Contáctame</span>}
+                            {language === 'ENG' ? <span className='bordered-text'>Contact</span> : <span className='bordered-text'>Contáctame</span>}
                         </h3>
                         {!state.succeeded ? (
                             <form onSubmit={handleSubmit} className='form-group'>
@@ -45,8 +45,8 @@ const Contact = ({ language }) => {
                                     name="message"
                                     style={{ overflow: 'hidden', paddingBottom: '170px' }}
                                     className="form-style mt-3"
-                                    placeholder={language === 'ENG' ? 'How can I help you?' : '¿En qué te puedo ayudar?'}
-                                    aria-label={language === 'ENG' ? 'How can I help you?' : '¿En qué te puedo ayudar?'}
+                                    placeholder={language === 'ENG' ? 'Your message' : 'Tú mensaje'}
+                                    aria-label={language === 'ENG' ? 'Your message' : 'Tú mensaje'}
                                 />
                                 <ValidationError
                                     prefix={language === 'ENG' ? 'Message' : 'Mensaje'}
@@ -54,7 +54,7 @@ const Contact = ({ language }) => {
                                     errors={state.errors}
                                 />
                                 <button type="submit" disabled={state.submitting} className="btn mt-4 mb-2">
-                                    {language === 'ENG' ? 'Submit' : 'Enviar'}
+                                    {language === 'ENG' ? 'Send your message' : 'Enviar'}
                                 </button>
                             </form>
                         ) : (

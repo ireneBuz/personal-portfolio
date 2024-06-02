@@ -4,42 +4,46 @@
     left: -9999px;
 }
 
+
+
 .nav-head h3 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 500;
-    font-size: 1.3vw;
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-    padding-left: 2vw;
-    color: transparent;
-    background-color: rgba(163, 21, 21, 0);
+    font-size: 1.3em;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    background-color: (255, 255, 255, 0);
+    padding-left: 4vw;
     margin: 0;
     width: 100vw;
-    transition: color 0.5s, background 0.5s !important;
+    transition: color 0.5s, background 0.5s !important
 }
 
 .nav-head span {
-    background: linear-gradient(to right, rgba(209, 8, 8, 0), rgba(169, 21, 21, 0));
     -webkit-background-clip: text;
     background-clip: text;
-
+    color: transparent;
 }
 
 .scroll-down h3 {
     background-color: white;
     color: #F2AA80;
-    transition: color 0.5s, background 0.5s;
-    box-shadow: 0 0.3px 10px 1px rgba(0, 0, 0, 0.1);
-    height: 5vw;
+    transition: color 0.5s,
+        background 0.5s;
+    box-shadow: 0 0.1vw 0.2vw 0.01vw #ADB8B8;
 }
+
+.scroll-down span {
+    color: #F2AA80;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 
 .navi,
 .nav {
     position: fixed;
     z-index: 10;
-    height: 5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
 }
 
 .navi a {
@@ -54,14 +58,28 @@
 }
 
 .nav-sections a {
-    color: #B8BFBE;
+    color: #ADB8B8;
     position: relative;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s;
+}
+
+.nav-sections a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    color: #ADB8B8;
+    transition: width 0.3s;
+}
+
+.nav-sections a:hover::before {
+    width: 100%;
 }
 
 .nav-sections a:hover {
     color: #F2AA80;
-    transform: scale(1.1);
 }
 
 .nav-language a {
@@ -78,7 +96,6 @@
 .logo-contact-mini {
     visibility: hidden;
     display: none;
-
 }
 
 .logo-contact img {
@@ -86,10 +103,6 @@
     height: 30%;
     filter: brightness(0);
 }
-
-
-
-
 
 @media screen and (max-width: 991px) {
 
@@ -117,9 +130,13 @@
         z-index: 200;
         top: 0;
         left: 0;
-        border-top: 2px solid #5A0B4D;
-        border-bottom: 2px solid #5A0B4D;
-        transition: border-width 100ms 1000ms ease, top 100ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-top: 2px solid #F2AA80;
+        border-bottom: 2px solid #F2AA80;
+        transition: border-width 100ms 1000ms ease,
+            top 100ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+            height 100ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+            background-color 200ms ease,
+            transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     .menu-icon:checked+label:after,
@@ -132,26 +149,38 @@
         z-index: 200;
         top: 10px;
         right: 4px;
-        background-color: #5A0B4D;
+        background-color: #F2AA80;
         margin-top: -1px;
-        transition: width 100ms 1250ms ease, right 100ms 1250ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: width 100ms 1250ms ease,
+            right 100ms 1250ms ease,
+            margin-top 100ms ease,
+            transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     .menu-icon:checked+label:before {
         top: 10px;
         transform: rotate(45deg);
         height: 2px;
-        background-color: #000000;
+        background-color: #F2AA80;
         border-width: 0;
-        transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: border-width 100ms 340ms ease,
+            top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            background-color 200ms 500ms ease,
+            transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
+
+
 
     .menu-icon:checked+label:after {
         width: 30px;
         margin-top: 0;
         right: 0;
         transform: rotate(-45deg);
-        transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: width 100ms ease,
+            right 100ms ease,
+            margin-top 100ms 500ms ease,
+            transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     .nav {
@@ -165,8 +194,14 @@
         margin: 0;
         z-index: 9;
         overflow: hidden;
-        transition: top 105ms 330ms cubic-bezier(0.23, 1, 0.32, 1), right 105ms 330ms cubic-bezier(0.23, 1, 0.32, 1), transform 75ms 330ms ease, width 195ms 120ms cubic-bezier(0.23, 1, 0.32, 1), height 195ms 120ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: top 105ms 330ms cubic-bezier(0.23, 1, 0.32, 1),
+            right 105ms 330ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 75ms 330ms ease,
+            width 195ms 120ms cubic-bezier(0.23, 1, 0.32, 1),
+            height 195ms 120ms cubic-bezier(0.23, 1, 0.32, 1);
+
     }
+
 
     .menu-icon:checked~.nav {
         top: 50%;
@@ -174,7 +209,12 @@
         transform: translate(50%, -50%);
         width: 200vw;
         height: 200vh;
-        transition: top 105ms 210ms cubic-bezier(0.23, 1, 0.32, 1), right 105ms 210ms cubic-bezier(0.23, 1, 0.32, 1), transform 75ms 210ms ease, width 210ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 210ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+
+        transition: top 105ms 210ms cubic-bezier(0.23, 1, 0.32, 1),
+            right 105ms 210ms cubic-bezier(0.23, 1, 0.32, 1),
+            transform 75ms 210ms ease,
+            width 210ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+            height 210ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     .overlay {
@@ -192,6 +232,7 @@
     .menu-icon:checked~.overlay {
         display: block;
     }
+
 
     .nav ul {
         position: absolute;
@@ -273,6 +314,7 @@
         width: 100%;
     }
 
+
     .menu-icon:checked~.nav ul li {
         pointer-events: auto;
         visibility: visible;
@@ -280,6 +322,10 @@
         transform: translateY(0);
         transition: opacity 350ms ease, transform 250ms ease;
     }
+
+
+
+
 
     .menu-icon:checked~.nav ul li:nth-child(1) {
         transition-delay: 400ms;
@@ -304,6 +350,7 @@
     .menu-icon:checked~.nav ul li:nth-child(6) {
         transition-delay: 800ms;
     }
+
 
     .nav,
     .navi-label,
@@ -336,6 +383,7 @@
     }
 
     .nav-sections,
+
     .nav-language,
     .nav-language a,
     .logo-contact,
@@ -354,11 +402,17 @@
         right: 40px;
     }
 
+
     .nav ul li a:after {
+
         margin-top: 1.2vh;
+
     }
 
     .nav ul li a {
         font-size: 3vh;
     }
+
+
+
 }
