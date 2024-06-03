@@ -1,7 +1,9 @@
 .academic-background-container {
     background-color: #D9D9D9;
     padding-top: 0;
-    height: 60vw;
+    height: auto;
+    margin-bottom: 20vw;
+    /* Ajuste automático de la altura */
 }
 
 .background-title {
@@ -18,13 +20,23 @@
     font-weight: 200;
 }
 
+.photos-container {
+    display: flex;
+    justify-content: space-between;
+    /* Ajustar espacio entre columnas */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Permitir que las columnas se envuelvan */
+    gap: 1vw;
+    /* Reducir el espacio entre las columnas */
+    padding: 0 2vw;
+    /* Espacio a los lados para asegurar que las columnas no se salgan de la pantalla */
+}
+
 .photo {
     text-align: center;
-    align-items: center;
-    flex: 0 0 50%;
-    max-width: 50%;
-    height: 100%;
-    perspective: 1000px;
+    width: 30%;
+    /* Ajustar el ancho de las columnas */
     position: relative;
 }
 
@@ -34,36 +46,15 @@
     max-height: 200px;
     border-radius: 2vw;
     object-fit: cover;
-    transform-style: preserve-3d;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-
-.photos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vw;
-}
-
-.photos-container img {
-    margin: 0 10vw;
-    width: 13vw;
-    height: 13vw;
-    margin-bottom: 5vw;
-    border-radius: 2vw;
-    object-fit: cover;
 }
 
 .expand-button {
-    margin-top: 15vw;
-    position: relative;
+    margin-top: 1vw;
     cursor: pointer;
     color: #D98566;
     text-align: center;
-
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.3vw;
 }
 
 .expand-button:hover {
@@ -73,12 +64,57 @@
 .academic-info {
     margin-top: 1vw;
     padding: 1vw;
-    border: 1px solid #F28D52;
+    border: 1px solid #323940;
     border-radius: 1vw;
     background-color: #D9D0BF;
-    width: 20vw;
-    max-width: 80%;
-    text-align: center;
-    margin-left: 15vw;
+    width: 100%;
+    /* Ajusta a toda la anchura del contenedor */
+    text-align: left;
     font-family: 'Urbanist', sans-serif;
+    font-size: 1vw;
+    color: #323940;
+}
+
+.academic-info h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.4vw;
+    color: #323940;
+    font-weight: 600;
+}
+
+.work-experience-container {
+    margin-top: 5vw;
+    padding: 2vw;
+    background-color: #f1f1f1;
+    /* Color de fondo diferente para separar visualmente */
+}
+
+.work-experience-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    font-weight: 150;
+    text-align: center;
+}
+
+.work-experience {
+    margin-top: 2vw;
+    padding: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto 2vw auto;
+    /* Centrar y agregar espacio inferior */
+    text-align: left;
+}
+
+.work-experience h3 {
+    font-weight: bold;
+    /* Negrita para los títulos */
+}
+
+.work-experience p {
+    font-weight: normal;
+    /* Normal para el texto de los párrafos */
 }

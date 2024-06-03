@@ -25,9 +25,9 @@
 }
 
 .image-content img {
-    max-width: 55%;
+    max-width: 20vw;
     height: auto;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 h2 {
@@ -88,7 +88,7 @@ h2 {
     transform: translateY(0%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     .about-me-container {
         flex-direction: column;
         text-align: center;
@@ -96,7 +96,23 @@ h2 {
 
     .text-content {
         padding-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 1vw;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 1vw;
     }
 
     .image-content img {
