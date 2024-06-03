@@ -19,7 +19,7 @@
     font-size: 1.3vw;
     font-weight: 200;
     display: flex;
-    margin-left: 9vw;
+    margin-left: 15vw;
     margin-top: 4vw;
     margin-bottom: -5vw;
     animation: pulse 1s infinite alternate;
@@ -47,6 +47,7 @@
 .project {
     display: inline-block;
     width: calc(40% - 2vw);
+    height: 21vw;
     margin: 3vw;
     box-shadow: 1px 1px 8px 0.5px #F2AA80;
     border-radius: 10px;
@@ -66,6 +67,7 @@
 .project-img img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .project-img:hover {

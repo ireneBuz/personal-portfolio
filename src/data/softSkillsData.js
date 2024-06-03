@@ -1,8 +1,7 @@
 const softSkillsData = [
-    "Communication",
-    "Problem Solving",
-    "Organization",
     "Empathy",
+    "Communication",
+    "Organization",
     "Teamwork",
     "Creativity",
     "Attention to Detail",

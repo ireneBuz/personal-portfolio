@@ -4,6 +4,7 @@
     background-color: #363F40;
     box-sizing: border-box;
     text-align: center;
+    justify-content: center;
 }
 
 .tools-title {

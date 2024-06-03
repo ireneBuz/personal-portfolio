@@ -31,37 +31,53 @@ const Project = ({ title, description, githubLink, projectLink, screenshot, tech
 const Projects = ({ language }) => {
     const projectsData = [
         {
-            title: language === 'ENG' ? 'Psychology page' : 'Web Psicología',
-            description: 'WorkInProgress. Professional psychology site, featuring the owner profile, services, and contact information. Designed by: Helena Arroyo',
-            githubLink: 'https://github.com/ireneBuz/ironhack-project01',
-            projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
-            screenshot: '/images/psico-proyect.png',
-            technologies: ['React', 'JavaScript', 'HTML', 'CSS']
-        },
-        {
             title: language === 'ENG' ? 'Piano Lessons' : 'Clases de Piano',
-            description: 'My personal music lessons website. Developed in React and Vue. Designed by: Alejandra Mamblona Gómez',
-            githubLink: 'https://github.com/ireneBuz/Q-support-client',
-            projectLink: 'https://creativesqplus.netlify.app/',
+            description: 'My personal music lessons website. Developed in React and Vue. Designed by: Alejandra Mamblona',
+            projectLink: 'https://clasespianomadrid.com/',
             screenshot: '/images/clases-proyect.png',
             technologies: ['React', 'Vue', 'Javascript', 'HTML', 'CSS']
         },
         {
+            title: language === 'ENG' ? 'Psychology page' : 'Web Psicología',
+            description: 'Work in Progress. Psychology website, featuring the owner profile, services, and contact information. Designed by: Helena Arroyo',
+            githubLink: 'https://github.com/Tezix/Cristina-rius.git',
+            projectLink: '',
+            screenshot: '/images/psico-proyect.png',
+            technologies: ['React', 'JavaScript', 'HTML', 'CSS']
+        },
+        {
+            title: language === 'ENG' ? 'Tezix' : 'Tezix',
+            description: 'Personal website.',
+            projectLink: 'https://tezix.dev/',
+            screenshot: '/images/tezix-proyect.png',
+            technologies: ['React', 'Vue', 'Javascript', 'HTML', 'CSS']
+        },
+        {
+            title: language === 'ENG' ? 'Intrusteril' : 'Intrusteril',
+            description: 'Website for a surgical instrument sterilization company, featuring the owner profile, services, and contact information.',
+            projectLink: 'https://instrusteril.es/',
+            screenshot: '/images/intrusteril-proyect.png',
+            technologies: ['React', 'Javascript', 'HTML', 'CSS']
+        },
+        {
             title: 'Kind of Snake',
-            description: 'A project about a kind of snake.',
+            description: 'Web-based game inspired on original Snake arcade. Developed in one week with Isabella Pavia at Ironhack.',
             githubLink: 'https://github.com/ireneBuz/ironhack-project01',
             projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
             screenshot: '/images/kind-of-snake.png',
             technologies: ['JavaScript', 'HTML', 'CSS']
         },
+
         {
-            title: 'Kind of Snake',
-            description: 'A project about a kind of snake.',
-            githubLink: 'https://github.com/ireneBuz/ironhack-project01',
-            projectLink: 'https://isabellanpaiva.github.io/kind-of-snake/',
-            screenshot: '/images/clases-proyect.png',
-            technologies: ['JavaScript', 'HTML', 'CSS']
+            title: language === 'ENG' ? 'Q+ Creatives' : 'Creativ@s Q+',
+            description: 'Project for social networking and crowdfunding for collective artists. Developed in one week with Rodrigo López Soria and Samuele Marino at Ironhack.',
+            githubLink: 'https://github.com/ireneBuz/Q-support-client',
+            projectLink: 'https://creativesqplus.netlify.app/',
+            screenshot: '/images/creatives-proyect.png',
+            technologies: ['React', 'Javascript', 'HTML', 'CSS']
         },
+
+
 
     ];
 

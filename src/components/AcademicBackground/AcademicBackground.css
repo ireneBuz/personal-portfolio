@@ -1,0 +1,80 @@
+.academic-background-container {
+    background-color: #D9D9D9;
+    padding-top: 0;
+    height: 60vw;
+}
+
+.background-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    font-weight: 150;
+    text-align: center;
+}
+
+.big-letter {
+    font-size: 12vw;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+}
+
+.photo {
+    text-align: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 100%;
+    perspective: 1000px;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 2vw;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.photos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+}
+
+.photos-container img {
+    margin: 0 10vw;
+    width: 13vw;
+    height: 13vw;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+    object-fit: cover;
+}
+
+.expand-button {
+    margin-top: 15vw;
+    position: relative;
+    cursor: pointer;
+    color: #D98566;
+
+}
+
+.expand-button:hover {
+    text-decoration: underline;
+}
+
+.academic-info {
+    margin-top: 2vw;
+    padding: 2vw;
+    border: 1px solid #F28D52;
+    border-radius: 10px;
+    background-color: #D9D0BF;
+    width: 20vw;
+    height: 10vw;
+
+}

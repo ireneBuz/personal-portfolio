@@ -59,7 +59,7 @@
     font-weight: 600;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    padding: 0 30px;
+    padding: 0 3vw;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -135,9 +135,8 @@
 
 .contact-card {
     padding-top: 2vw;
-    padding-bottom: 40px;
+    padding-bottom: 4vw;
     background-color: #6C7372;
-    border-radius: 10px;
 }
 
 .contact-card h4 {
@@ -165,12 +164,12 @@
 
 @media (max-width: 600px) {
     .contact-card {
-        padding-top: 50px;
+        padding-top: 5vw;
 
     }
 
     .contact-card h3,
     .contact-card span {
-        font-size: 1.3em;
+        font-size: 1.5vw;
     }
 }

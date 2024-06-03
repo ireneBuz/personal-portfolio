@@ -13,12 +13,14 @@
 
 .ex {
     color: #D98566;
-    font-weight: 600;
+    font-weight: 350;
+    font-size: 2.2vw;
 }
 
 .highlight {
-    font-weight: 400;
+    font-weight: 300;
     color: rgb(211, 203, 203);
+    font-size: 2vw;
 }
 
 .hero {
@@ -43,12 +45,11 @@
 .hero h2,
 .hero h3 {
     font-family: 'Urbanist', sans-serif;
-    font-weight: 200;
     font-size: 2vw;
+    font-weight: 200;
     color: rgb(211, 203, 203);
     text-align: left;
     margin-left: 7vw;
-    line-height: 3vw;
 }
 
 .scroll-arrow {
@@ -115,12 +116,12 @@
     .hero h1,
     .hero h2,
     .hero h3 {
-        font-size: 4vw;
+        font-size: 1.5vw;
         margin-left: 0;
     }
 
     .hero img {
-        width: 80%;
+        width: 60%;
         height: auto;
     }
 }
@@ -132,20 +133,20 @@
     }
 
     .hero {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
     }
 
     .hero h1,
     .hero h2 {
-        font-size: 6vw;
+        font-size: 1.5vw;
         margin-bottom: 0;
     }
 
     .hero h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 2vw;
+        margin-bottom: 2vwpx;
         font-weight: 500;
-        font-size: 4vw;
+        font-size: 1.5vw;
     }
 }
