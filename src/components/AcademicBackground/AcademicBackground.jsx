@@ -9,8 +9,9 @@ const AcademicBackground = () => {
     return (
         <div className="academic-background-container">
             <h2 className='background-title'>
-                <span className="big-letter">A</span>cademic Background
+                <span className="big-letter">A</span>cademic Background <span className="bold-title">&</span> <span className="big-letter">C</span>areer experience
             </h2>
+
             <div className="photos-container">
                 <div className="photo">
                     <img src="/images/tec-background.png" alt="Computer" />
@@ -64,19 +65,33 @@ const AcademicBackground = () => {
                     {workExpanded && (
                         <>
                             <div className="academic-info">
-                                <h3>Posición 1</h3>
-                                <p>Descripción de la posición 1.</p>
-                                <p>Año de trabajo: 20XX - 20XX</p>
+                                <h3>Co-founder & Frontend team lead in Tezix</h3>
+                                <p></p>
+                                <p>09/2020 -
+                                    present</p>
                             </div>
                             <div className="academic-info">
-                                <h3>Posición 2</h3>
-                                <p>Descripción de la posición 2.</p>
-                                <p>Año de trabajo: 20XX - 20XX</p>
+                                <h3>Frontend Developer in El Dedal Amarillo</h3>
+                                <p></p>
+                                <p>2018 - 2019</p>
                             </div>
                             <div className="academic-info">
-                                <h3>Posición 3</h3>
-                                <p>Descripción de la posición 3.</p>
-                                <p>Año de trabajo: 20XX - 20XX</p>
+                                <h3>Freelance educational consultant</h3>
+                                <p></p>
+                                <p>09/2020 -
+                                    present</p>
+                            </div>
+                            <div className="academic-info">
+                                <h3>Full Professor at EMMD San Sebastián de los Reyes</h3>
+                                <p>Music theory - Piano - Music and movement - Musical ensemble
+                                    Harmony</p>
+                                <p>09/2013 - present</p>
+                            </div>
+                            <div className="academic-info">
+                                <h3>Profesor in the Senior University Program</h3>
+                                <p>Musical audition - Music history - Music theory</p>
+                                <p> 09/2017-
+                                    06/2020</p>
                             </div>
                         </>
                     )}

@@ -1,0 +1,93 @@
+.personal-info-container {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    background-color: #D9D9D9;
+}
+
+.info-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2vw;
+    padding-top: 5vw;
+    font-weight: 150;
+    text-align: center;
+}
+
+.big-letter {
+    font-size: 12vw;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 200;
+}
+
+
+.cv-button {
+    display: inline-block;
+    margin-top: 1vw;
+    padding: 0.5vw 2vw;
+    background-color: #D98566;
+    color: #323940;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #B46A4A;
+}
+
+.see-you-soon {
+    margin-top: 2vw;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2vw;
+    color: #323940;
+}
+
+.exclamation-info {
+    position: relative;
+    color: transparent;
+}
+
+.exclamation-info::before {
+    content: '';
+    position: absolute;
+    top: -0.1vw;
+    left: 1.3vw;
+    width: 0.5vw;
+    height: 16vw;
+    background-color: #F28D52;
+    transform: translateX(-20%);
+}
+
+.exclamation-info::after {
+    content: '';
+    position: absolute;
+    bottom: -0vw;
+    left: calc(30% + 1vw);
+    width: 1vw;
+    height: 1vw;
+    background-color: #F28D52;
+    border-radius: 50%;
+    transform: translateX(-30%);
+}
+
+.exclamation-info::before {
+    transition: transform 1s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.exclamation-info::after {
+    transition: transform 2s ease-in-out;
+    transform: translateY(100%);
+}
+
+.about-me-container.loaded .exclamation-info::before {
+    transform: translateY(0%);
+}
+
+.about-me-container.loaded .exclamation-info::after {
+    transform: translateY(0%);
+}
