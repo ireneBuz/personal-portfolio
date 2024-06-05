@@ -1,6 +1,6 @@
 .projects-section {
     width: 100%;
-    background-color: #363F40;
+    background-color: #B8BFBE;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -10,8 +10,9 @@
 
     font-size: 2vw;
     margin-bottom: 5vw;
-    color: rgb(211, 203, 203);
+    color: #363F40;
     text-align: center;
+    font-weight: 200;
 }
 
 
@@ -37,7 +38,8 @@
 }
 
 .projects {
-    color: #D98566;
+    color: #E6650A;
+    font-weight: 400;
 }
 
 .projects-grid {
@@ -49,7 +51,7 @@
     width: calc(40% - 2vw);
     height: 21vw;
     margin: 3vw;
-    box-shadow: 1px 1px 8px 0.5px #F2AA80;
+    /* box-shadow: 1px 1px 8px 0.5px #F2AA80; */
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
     overflow: hidden;

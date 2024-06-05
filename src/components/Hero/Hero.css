@@ -3,23 +3,24 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #363F40;
+    background-color: #B8BFBE;
 }
 
 .img {
-    width: 80%;
+    width: 75%;
+    border-radius: 1vw;
 }
 
 
 .ex {
-    color: #D98566;
-    font-weight: 350;
+    color: #E6650A;
+    font-weight: 400;
     font-size: 2.2vw;
 }
 
 .highlight {
     font-weight: 300;
-    color: rgb(211, 203, 203);
+    color: #363F40;
     font-size: 2vw;
 }
 
@@ -47,7 +48,7 @@
     font-family: 'Urbanist', sans-serif;
     font-size: 2vw;
     font-weight: 200;
-    color: rgb(211, 203, 203);
+    color: #363F40;
     text-align: left;
     margin-left: 7vw;
 }
@@ -58,9 +59,10 @@
     left: 30%;
     transform: translateX(-50%);
     font-size: 2vw;
-    color: #D98566;
+    color: #E6650A;
     cursor: pointer;
 }
+
 
 @media (max-width: 600px) {
     .scroll-arrow {

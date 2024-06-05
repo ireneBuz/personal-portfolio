@@ -34,7 +34,7 @@
 }
 
 .scroll-down span {
-    color: #F2AA80;
+    color: #E6650A;
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -50,15 +50,13 @@
     text-decoration: none;
 }
 
-.nav-sections {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    font-size: 1.3em;
-    position: relative;
-}
+
 
 .nav-sections a {
-    color: #ADB8B8;
+    font-family: 'Urbanist', sans-serif;
+    color: #363F40;
+    font-weight: 300;
+    font-size: 1.3em;
     position: relative;
     transition: color 0.3s;
 }
@@ -79,7 +77,7 @@
 }
 
 .nav-sections a:hover {
-    color: #F2AA80;
+    color: #E6650A;
 }
 
 .nav-language a {
