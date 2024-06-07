@@ -1,8 +1,7 @@
 .academic-background-container {
-    background-color: #D9D9D9;
+    background-color: #F7F7F5;
     padding-top: 0;
     height: auto;
-    /* Ajuste automático de la altura */
 }
 
 .background-title {
@@ -31,19 +30,18 @@
 .photos-container {
     display: flex;
     justify-content: space-between;
-    /* Ajustar espacio entre columnas */
     align-items: flex-start;
     flex-wrap: wrap;
     /* Permitir que las columnas se envuelvan */
     gap: 1vw;
     /* Reducir el espacio entre las columnas */
-    padding: 0 2vw;
+    padding: 0 8vw;
     /* Espacio a los lados para asegurar que las columnas no se salgan de la pantalla */
 }
 
 .photo {
     text-align: center;
-    width: 30%;
+    width: 28%;
     /* Ajustar el ancho de las columnas */
     position: relative;
 }
@@ -74,7 +72,7 @@
     /* border: 1px solid #323940; */
     border-radius: 1vw;
     background-color: #D9D0BF;
-    width: 30vw;
+    width: 25vw;
     /* Ajusta a toda la anchura del contenedor */
     text-align: center;
     font-family: 'Urbanist', sans-serif;
@@ -84,16 +82,15 @@
 
 .academic-info h3 {
     font-family: 'Urbanist', sans-serif;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     color: #323940;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .work-experience-container {
     margin-top: 5vw;
     padding: 2vw;
     background-color: #f1f1f1;
-    /* Color de fondo diferente para separar visualmente */
 }
 
 .work-experience-title {

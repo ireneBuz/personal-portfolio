@@ -1,7 +1,7 @@
 .skills-container {
     padding: 2vw;
     width: 100%;
-    background-color: #363F40;
+    background-color: #F7F7F5;
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
@@ -9,22 +9,26 @@
 
 .tools-title {
     margin-top: 5vw;
-    font-size: 2vw;
     margin-bottom: 3vw;
-    color: rgb(211, 203, 203);
     text-align: center;
+    font-size: 2vw;
+    color: #363F40;
+    text-align: center;
+    font-weight: 200;
 }
 
 .skills-title {
-    margin-top: 1vw;
     font-size: 2vw;
     margin-bottom: 3vw;
-    color: rgb(211, 203, 203);
+    color: #363F40;
     text-align: center;
+    font-weight: 200;
 }
 
 .tools {
     color: #E6650A;
+    font-weight: 400;
+    font-size: 2.2vw;
 }
 
 

@@ -19,7 +19,7 @@ const Project = ({ title, description, githubLink, projectLink, screenshot, tech
                             <button className='link-button'>GitHub</button>
                         </a>
                         <a href={projectLink} target='_blank' rel='noopener noreferrer'>
-                            <button className='link-button'>Demo</button>
+                            <button className='link-button'>Visit</button>
                         </a>
                     </div>
                 </div>
@@ -86,7 +86,8 @@ const Projects = ({ language }) => {
             <h3 className='projects-title'>
                 {language === 'ENG' ? (
                     <>
-                        <span className='my'>My</span> <span className='projects'>Projects</span><span className='hover-info'>hover to get more info</span>
+                        <span className='my'>My</span> <span className='projects'>Projects</span>
+                        {/* <span className='hover-info'>hover to get more info</span> */}
                     </>
                 ) : (
                     <>
