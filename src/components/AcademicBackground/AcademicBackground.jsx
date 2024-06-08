@@ -8,15 +8,14 @@ const AcademicBackground = () => {
 
     return (
         <div className="academic-background-container">
-            <h2 className='background-title'>
-                <span className="big-letter">A</span>cademic Background <span className="bold-title">&</span> <span className="big-letter">C</span>areer experience
-            </h2>
+            <h2 className='background-text'>More about my <span>academic background</span> and <span>work experience.</span></h2>
+
 
             <div className="photos-container">
                 <div className="photo">
                     <img src="/images/tec-background.png" alt="Computer" />
                     <div className="expand-button" onClick={() => setComputerExpanded(!computerExpanded)}>
-                        {computerExpanded ? 'Hide' : 'Show'} Academic Background
+                        {computerExpanded ? '▲' : '▼'}
                     </div>
                     {computerExpanded && (
                         <>
@@ -40,7 +39,7 @@ const AcademicBackground = () => {
                 <div className="photo">
                     <img src="/images/music-background.png" alt="Piano" />
                     <div className="expand-button" onClick={() => setMusicExpanded(!musicExpanded)}>
-                        {musicExpanded ? 'Hide' : 'Show'} Academic Background
+                        {musicExpanded ? '▲' : '▼'}
                     </div>
                     {musicExpanded && (
                         <>
@@ -50,7 +49,7 @@ const AcademicBackground = () => {
                                 <p>Royal Conservatory of Music (Madrid, 2010)</p>
                             </div>
                             <div className="academic-info">
-                                <h3>University master ́s degree in Teacher Training</h3>
+                                <h3>University master's degree in Teacher Training</h3>
                                 <p>Specialization in music</p>
                                 <p>UAM (Madrid, 2017)</p>
                             </div>
@@ -60,20 +59,24 @@ const AcademicBackground = () => {
                 <div className="photo">
                     <img src="/images/work-experience.png" alt="Work" />
                     <div className="expand-button" onClick={() => setWorkExpanded(!workExpanded)}>
-                        {workExpanded ? 'Hide' : 'Show'} Work Experience
+                        {workExpanded ? '▲' : '▼'}
                     </div>
                     {workExpanded && (
                         <>
                             <div className="academic-info">
-                                <h3>Co-founder & Frontend team lead in Tezix</h3>
-                                <p></p>
+                                <h3>Software Engineer in Tezix</h3>
+                                <p>Web dev AngularJS/ReactJS (fe), NodeJS/TSSQL(be)
+                                    CI/CD Infrastucture with AWS.
+                                    Integration with APIs for payments & security.
+                                    Daily organization with Zenhub - Scrum</p>
                                 <p>09/2020 -
                                     present</p>
                             </div>
                             <div className="academic-info">
-                                <h3>Frontend Developer in El Dedal Amarillo</h3>
-                                <p></p>
-                                <p>2018 - 2019</p>
+                                <h3>Software Engineer in El Dedal Amarillo</h3>
+                                <p>Web dev AngularJS/ReactJS(fe), NodeJS/TSSQL(be)
+                                    Daily organization with Zenhub - Scrum.</p>
+                                <p>2017 - 2019</p>
                             </div>
                             <div className="academic-info">
                                 <h3>Freelance educational consultant</h3>
@@ -82,7 +85,7 @@ const AcademicBackground = () => {
                                     present</p>
                             </div>
                             <div className="academic-info">
-                                <h3>Full Professor at EMMD San Sebastián de los Reyes</h3>
+                                <h3>Music teacher at EMMD San Sebastián de los Reyes</h3>
                                 <p>Music theory - Piano - Music and movement - Musical ensemble
                                     Harmony</p>
                                 <p>09/2013 - present</p>

@@ -1,5 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 import { useEffect, useState } from 'react';
 
@@ -50,9 +51,9 @@ const Navigation = ({ language, setLanguage }) => {
                 <Col xs='8' lg='6'>
                     <Row className='nav-sections justify-content-around me-3' role="menubar">
                         <Col xs='3' lg='4' className='text-center p-0'>
-                            <Link to="/about-me-section" style={{ textDecoration: 'none' }} role="menuitem" onClick={closeMenu}>
+                            <NavLink to="/about-me-section" style={{ textDecoration: 'none' }} role="menuitem" onClick={closeMenu}>
                                 {language === 'ENG' ? 'ABOUT ME' : 'SOBRE MÍ'}
-                            </Link>
+                            </NavLink>
                         </Col>
                         <Col xs='3' lg='4' className='text-center p-0'>
                             <a href="#projects-section" role="menuitem">

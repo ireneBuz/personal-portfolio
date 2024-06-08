@@ -33,11 +33,11 @@ const Hero = ({ language }) => {
                             <span className="highlight">{language === 'ENG' ? "accessible projects" : "útiles"}</span>
                             {language === 'ENG' ? "." : "."}
                         </h2>
-                        <h2 role="heading" aria-level="3">
+                        <h3 role="heading" aria-level="3">
                             {language === 'ENG' ? "With a background in " : "Con un background en "}
                             <span className="highlight">{language === 'ENG' ? "musical pedagogy" : "pedagogía musical"}</span>
                             {language === 'ENG' ? ", I apply creativity and a unique perspective to my work." : " que aplico en mis proyectos."}
-                        </h2>
+                        </h3>
 
 
                     </Col>

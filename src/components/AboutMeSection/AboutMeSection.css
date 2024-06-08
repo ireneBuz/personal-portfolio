@@ -1,6 +1,7 @@
 .about-me-container {
     padding-top: 5vw;
     display: flex;
+    gap: 1vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@
 
 .text-content {
     flex: 1;
-    padding-left: 20vw;
+    margin-left: 12vw;
     margin-top: 10vw;
 }
 
@@ -20,27 +21,25 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    padding-right: 25vw;
-    padding-top: 9vw;
+    margin-right: 9vw;
+    padding-top: 10vw;
 }
 
 .image-content img {
-    max-width: 20vw;
+    width: 45%;
     height: auto;
     border-radius: 1vw;
 }
 
-h2 {
+.about-text {
+    color: #363F40;
     font-family: 'Urbanist', sans-serif;
-    font-size: 2vw;
-    font-weight: 200;
+    font-size: 1.7vw;
+    font-weight: 250;
+    line-height: 2.7vw;
 }
 
-.about-thanks {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 2vw;
-    font-weight: 200;
-}
+
 
 .exclamation {
     position: relative;

@@ -5,18 +5,9 @@ const PersonalInfoSection = ({ language }) => {
     return (
         <div className="personal-info-container">
             <h2 className='info-title'>
-                <span className="big-letter">G</span>et More Info &
+                Or you can download my <a href="/path/to/your/cv.pdf" className="cv-button">Resume</a>
             </h2>
-            <a href="/path/to/your/cv.pdf" className="cv-button">Download CV</a>
-
-            <h2 className='info-title'>
-                <span className="big-letter">S</span>ee you soon
-                <span className="exclamation-info">!</span>
-
-            </h2>
-
         </div>
-
     );
 };
 

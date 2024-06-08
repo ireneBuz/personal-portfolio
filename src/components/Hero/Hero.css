@@ -19,9 +19,9 @@
 }
 
 .highlight {
-    font-weight: 300;
+    font-weight: 350;
     color: #363F40;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 .hero {
@@ -46,16 +46,18 @@
 .hero h2,
 .hero h3 {
     font-family: 'Urbanist', sans-serif;
-    font-size: 2vw;
-    font-weight: 200;
+    font-size: 1.7vw;
+    font-weight: 250;
     color: #363F40;
     text-align: left;
     margin-left: 7vw;
+    margin-right: 5vw;
+    line-height: 2.7vw;
 }
 
 .scroll-arrow {
     position: relative;
-    bottom: 15vw;
+    bottom: 12vw;
     left: 30%;
     transform: translateX(-50%);
     font-size: 2vw;
@@ -119,7 +121,7 @@
     .hero h2,
     .hero h3 {
         font-size: 1.5vw;
-        margin-left: 0;
+        margin-left: 3vw;
     }
 
     .hero img {
@@ -129,26 +131,21 @@
 }
 
 @media (max-width: 600px) {
-    .hero-background {
-        background-image: rgb(220, 178, 79);
-        background-size: cover;
-    }
-
     .hero {
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .hero h1,
-    .hero h2 {
+    .hero h2,
+    .hero h3 {
         font-size: 1.5vw;
-        margin-bottom: 0;
+        margin-left: 10vw;
     }
 
-    .hero h3 {
-        margin-top: 2vw;
-        margin-bottom: 2vwpx;
-        font-weight: 500;
-        font-size: 1.5vw;
+    .hero img {
+        width: 60%;
+        height: auto;
     }
 }

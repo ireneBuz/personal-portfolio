@@ -4,27 +4,19 @@
     height: auto;
 }
 
-.background-title {
+.background-text {
+    padding-top: 3vw;
+    margin-left: 12vw;
+    color: #363F40;
     font-family: 'Urbanist', sans-serif;
-    font-size: 2vw;
-    margin-bottom: 2vw;
-    padding-top: 5vw;
-    padding-bottom: 2.5vw;
-    font-weight: 150;
-    text-align: center;
+    font-size: 2.2vw;
+    font-weight: 300;
+    line-height: 2.7vw;
+    margin-bottom: 5vw;
 }
 
-.big-letter {
-    font-size: 12vw;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 200;
-}
-
-.bold-title {
-    font-weight: 500;
+.background-text span {
     color: #E6650A;
-    margin-left: 2vw;
-    margin-right: 1vw;
 }
 
 .photos-container {
@@ -32,17 +24,13 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* Permitir que las columnas se envuelvan */
     gap: 1vw;
-    /* Reducir el espacio entre las columnas */
-    padding: 0 8vw;
-    /* Espacio a los lados para asegurar que las columnas no se salgan de la pantalla */
+    padding: 0 7vw;
 }
 
 .photo {
     text-align: center;
     width: 28%;
-    /* Ajustar el ancho de las columnas */
     position: relative;
 }
 
@@ -54,12 +42,15 @@
 }
 
 .expand-button {
-    margin-top: 1vw;
+    margin-top: 1.5vw;
     cursor: pointer;
     color: #E6650A;
     text-align: center;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.3vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
 }
 
 .expand-button:hover {
@@ -69,11 +60,9 @@
 .academic-info {
     margin-top: 1vw;
     padding: 1vw;
-    /* border: 1px solid #323940; */
     border-radius: 1vw;
     background-color: #D9D0BF;
     width: 25vw;
-    /* Ajusta a toda la anchura del contenedor */
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 1vw;
@@ -85,40 +74,4 @@
     font-size: 1.3vw;
     color: #323940;
     font-weight: 500;
-}
-
-.work-experience-container {
-    margin-top: 5vw;
-    padding: 2vw;
-    background-color: #f1f1f1;
-}
-
-.work-experience-title {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 2vw;
-    margin-bottom: 2vw;
-    font-weight: 150;
-    text-align: center;
-}
-
-.work-experience {
-    margin-top: 2vw;
-    padding: 2vw;
-    border: 1px solid #ccc;
-    border-radius: 1vw;
-    background-color: #fff;
-    width: 30vw;
-    margin: 0 auto 2vw auto;
-    /* Centrar y agregar espacio inferior */
-    text-align: left;
-}
-
-.work-experience h3 {
-    font-weight: bold;
-    /* Negrita para los títulos */
-}
-
-.work-experience p {
-    font-weight: normal;
-    /* Normal para el texto de los párrafos */
 }

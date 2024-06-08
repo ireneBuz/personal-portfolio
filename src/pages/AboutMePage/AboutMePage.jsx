@@ -20,6 +20,7 @@ const AboutMePage = ({ language }) => {
                 <PersonalInfoSection language={language} />
             </section>
 
+
         </>
     )
 }
