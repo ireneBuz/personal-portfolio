@@ -33,6 +33,8 @@
 
 
 .skill-button {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
     background-color: #6c757d;
     color: white;
     border: none;
@@ -45,9 +47,9 @@
     margin-bottom: 8vw;
 }
 
-.skill-button:hover {
+/* .skill-button:hover {
     background-color: #495057;
-}
+} */
 
 @media (max-width: 768px) {
     .skill-button {

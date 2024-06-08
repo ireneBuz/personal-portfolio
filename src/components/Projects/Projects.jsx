@@ -35,7 +35,7 @@ const Projects = ({ language }) => {
             description: 'My personal music lessons website. Developed in React and Vue. Designed by: Alejandra Mamblona',
             projectLink: 'https://clasespianomadrid.com/',
             screenshot: '/images/clases-proyect.png',
-            technologies: ['React', 'Vue', 'Javascript', 'HTML', 'CSS']
+            technologies: ['VueJS', 'Javascript']
         },
         {
             title: language === 'ENG' ? 'Psychology page' : 'Web Psicología',
@@ -43,21 +43,21 @@ const Projects = ({ language }) => {
             githubLink: 'https://github.com/Tezix/Cristina-rius.git',
             projectLink: '',
             screenshot: '/images/psico-proyect.png',
-            technologies: ['React', 'JavaScript', 'HTML', 'CSS']
+            technologies: ['React', 'JavaScript']
         },
         {
             title: language === 'ENG' ? 'Tezix' : 'Tezix',
             description: 'Personal website.',
             projectLink: 'https://tezix.dev/',
             screenshot: '/images/tezix-proyect.png',
-            technologies: ['React', 'Vue', 'Javascript', 'HTML', 'CSS']
+            technologies: ['React', 'Javascript']
         },
         {
             title: language === 'ENG' ? 'Intrusteril' : 'Intrusteril',
             description: 'Website for a surgical instrument sterilization company, featuring the owner profile, services, and contact information.',
             projectLink: 'https://instrusteril.es/',
             screenshot: '/images/intrusteril-proyect.png',
-            technologies: ['React', 'Javascript', 'HTML', 'CSS']
+            technologies: ['React', 'Javascript']
         },
         {
             title: 'Kind of Snake',
@@ -74,7 +74,7 @@ const Projects = ({ language }) => {
             githubLink: 'https://github.com/ireneBuz/Q-support-client',
             projectLink: 'https://creativesqplus.netlify.app/',
             screenshot: '/images/creatives-proyect.png',
-            technologies: ['React', 'Javascript', 'HTML', 'CSS']
+            technologies: ['React', 'Javascript', 'ExpressJS', 'MongoDB']
         },
 
 

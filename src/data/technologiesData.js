@@ -1,9 +1,7 @@
 const technologiesData = [
-    'React',
-    'Vue',
+    'ReactJS',
+    'VueJS',
     'JavaScript',
-    'HTML',
-    'CSS',
     'MongoDB',
     'Axios',
     'ExpressJS',
