@@ -5,7 +5,10 @@ const PersonalInfoSection = ({ language }) => {
     return (
         <div className="personal-info-container">
             <h2 className='info-title'>
-                Or you can download my <a href="/path/to/your/cv.pdf" className="cv-button">Resume</a>
+                {language === 'ENG' ? 'Or you can download my ' : 'O puedes descargar mi '}
+                <a href="/images/cvIreneBuz.png" className="cv-button" download>
+                    {language === 'ENG' ? 'Resume' : 'Currículum'}
+                </a>
             </h2>
         </div>
     );
